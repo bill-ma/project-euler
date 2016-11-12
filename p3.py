@@ -7,7 +7,7 @@ def isPrime(x):
 			return False
 	return True
 
-def listFactors(x):
+def LargestPrimeFactor(x):
 	for i in range(x//2+1,1,-1):
 		if(x%i == 0):
 			if(isPrime(i)):
@@ -16,6 +16,7 @@ def listFactors(x):
 		else: 
 			continue
 
-#listFactors(13195)
-listFactors(600851475143)
+#print(isPrime(600851475143))
+#listPrimeFactors(13195)
+#listPrimeFactors(600851475143)
 #hello1
