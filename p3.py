@@ -15,8 +15,7 @@ def LargestPrimeFactor(x):
 				break;
 		else: 
 			continue
-
-#print(isPrime(600851475143))
+#asdf
 #listPrimeFactors(13195)
 #listPrimeFactors(600851475143)
 #hello1
