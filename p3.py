@@ -1,4 +1,5 @@
 # What is the largest prime factor of the number 600851475143?
+
 from math import sqrt
 
 def isPrime(x):
@@ -7,15 +8,24 @@ def isPrime(x):
 			return False
 	return True
 
-def LargestPrimeFactor(x):
+def largestPrimeFactor(x):
 	for i in range(x//2+1,1,-1):
 		if(x%i == 0):
 			if(isPrime(i)):
 				print(i)
 				break;
-		else: 
-			continue
-#asdfdasdf
-#listPrimeFactors(13195)
-#listPrimeFactors(600851475143)
-#hello1
+
+largestPrimeFactor(600851475143)
+
+"""
+#better solution
+def solution3(N=600851475143):
+    p = 2
+    while N > 1:
+        while not N % p:
+            N //= p
+        p += 1
+    return p - 1
+
+print(solution3())
+"""
